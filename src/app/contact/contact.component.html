@@ -1,0 +1,69 @@
+<div class="mx-auto" style="width: 200px;">
+<!-- <p> -->
+  Please send your questions at the below e-mail:
+<!-- </p> -->
+</div>
+<div class="mx-auto" style="width: 200px;"><strong>contact@e-bartmedia.com</strong>, or use the below contact form.
+</div>
+
+<!-- <p>
+<strong>contact@e-bartmedia.com</strong>, 
+</p>
+<p>
+or use the below contact form.
+</p> -->
+
+
+<!-- <form #contactForm="ngForm" (ngSubmit)="onFormSubmit(contactForm)"> -->
+<!-- <form #f="ngForm" (ngSubmit)="onFormSubmit(f)" class="horizontal"> -->
+
+<div class="mx-auto" style="width: 200px;">
+<form #f="ngForm" (ngSubmit)="onFormSubmit(f)">  
+     <p>
+     <mat-form-field>
+        <input matInput placeholder="name"
+        name="name"
+        required
+        ngModel
+        #name="ngModel">
+      </mat-form-field>
+     </p>
+     <p>
+      <mat-form-field>
+          <input matInput placeholder="surname"
+          name="surname"
+          required
+          ngModel
+          #name="ngModel">
+        </mat-form-field>
+      </p>
+     <p>
+      <mat-form-field>
+          <input matInput placeholder="email"
+          name="email"
+          required
+          ngModel
+          #name="ngModel">
+        </mat-form-field>
+      </p>
+        <p>
+        <mat-form-field> 
+          <textarea matInput placeholder="information"
+          name="information"
+          required
+          maxlength="180"
+          ngModel
+          #name="ngModel"
+          cdkTextareaAutosize
+          cdkAutosizeMinRows="5"
+          cdkAutosizeMaxRows="10"></textarea>
+         </mat-form-field>
+         </p>
+
+         <p>
+         <button mat-raised-button>Submit</button>
+         </p>
+
+
+</form>
+</div>
